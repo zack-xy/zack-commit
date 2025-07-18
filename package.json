@@ -1,0 +1,44 @@
+{
+  "name": "zack-commit",
+  "version": "0.0.1",
+  "description": "",
+  "author": "zack zheng <zack_zhengxiyun@163.com> (https://zack-xy.github.io/knownNet/)",
+  "license": "MIT",
+  "homepage": "https://github.com/zack-xy/zack-commit#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zack-xy/zack-commit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zack-xy/zack-commit/issues"
+  },
+  "keywords": [],
+  "main": "index.js",
+  "files": [
+    "bin",
+    "templates"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.17.0",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@types/node": "^24.0.14",
+    "commitlint": "^19.8.1",
+    "cz-customizable": "^7.4.0",
+    "eslint": "^9.31.0",
+    "husky": "^9.1.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz-config.cjs"
+    }
+  }
+}
