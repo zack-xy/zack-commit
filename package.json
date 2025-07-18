@@ -1,5 +1,5 @@
 {
-  "name": "zack-commit",
+  "name": "@zack-xy/zack-commit",
   "version": "0.0.1",
   "description": "",
   "author": "zack zheng <zack_zhengxiyun@163.com> (https://zack-xy.github.io/knownNet/)",
@@ -14,6 +14,9 @@
   },
   "keywords": [],
   "main": "index.js",
+  "bin": {
+    "zack-commit-init": "./bin/index.js"
+  },
   "files": [
     "bin",
     "templates"
